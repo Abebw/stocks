@@ -1,0 +1,41 @@
+{
+  "name": "wolkenkit-template-minimal",
+  "version": "1.0.0",
+  "description": "wolkenkit-template-minimal is an application template for wolkenkit.",
+  "wolkenkit": {
+    "application": "sample",
+    "runtime": {
+      "version": "3.1.0"
+    },
+    "environments": {
+      "default": {
+        "api": {
+          "address": {
+            "host": "localhost",
+            "port": 3000
+          },
+          "allowAccessFrom": "*",
+          "certificate": "/server/keys/localhost"
+        },
+        "fileStorage": {
+          "allowAccessFrom": "*"
+        },
+        "node": {
+          "environment": "development"
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thenativeweb/wolkenkit-template-minimal.git"
+  },
+  "keywords": [
+    "wolkenkit"
+  ],
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "flaschenpost": "^3.2.0",
+    "wolkenkit": "^3.1.2"
+  }
+}

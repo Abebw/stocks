@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Stocks</title>
+
+    <style>
+      body, input, button {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+      }
+      .screen {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+      }
+      .screen > * {
+        padding: 20px;
+      }
+      .accounts {
+        flex: 1 1 100%;
+        margin: 0px;
+        overflow: scroll;
+      }
+      .accounts .account {
+        list-style-type: none;
+        border-bottom: 1px solid #e8e8e8;
+        line-height: 1.8;
+        padding: 12px 0 20px 0;
+      }
+      .accounts .account:first-child {
+        padding-top: 0;
+      }
+      .accounts .account:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      .accounts .account .likes {
+        display: inline-block;
+        padding: 0px 6px;
+        font-size: 14px;
+        border: 1px solid #cacaca;
+        border-radius: 2px;
+        user-select: none;
+      }
+      .open-account-form {
+        display: flex;
+        flex: 0 0 auto;
+        background: #404040;
+      }
+      .open-account-form input {
+        flex: 1 1 100%;
+        margin-right: 20px;
+        padding: 6px 8px;
+      }
+      .open-account-form button {
+        flex: 0 0 auto;
+        border: none;
+        color: #fff;
+        padding: 8px 10px;
+        margin-right: 20px;
+        border-radius: 2px;
+        background: #29abe2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="screen">
+      <ul class="accounts"></ul>
+
+      <form class="open-account-form">
+        <input class="new-Account" type="text" placeholder="Enter an account holder name" />
+        <button type="submit">Open Account</button>
+        <button class="render-Accounts">Render</button>
+      </form>
+    </div>
+
+    <!-- All JavaScript will be injected by webpack here -->
+  </body>
+</html>
