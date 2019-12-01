@@ -6,7 +6,7 @@ const fields = {
 };
 
 const projections = {
-  'accounts.account.open' (accounts, event) {
+  'accounts.account.opened' (accounts, event) {
     accounts.add({ownerName: event.data.ownerName,
       timestamp: event.metadata.timestamp});
   }
