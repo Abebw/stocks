@@ -10,3 +10,5 @@ temp.json
 # OS generated files and folders
 .DS_Store
 npm-debug.log
+
+client/dist
